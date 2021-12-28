@@ -24,10 +24,11 @@
 package org.primefaces.component.api;
 
 import java.util.Map;
+import java.io.Serializable;
 
 import javax.faces.event.BehaviorEvent;
 
-public interface PrimeClientBehaviorHolder {
+public interface PrimeClientBehaviorHolder extends Serializable {
 
     Map<String, Class<? extends BehaviorEvent>> getBehaviorEventMapping();
 }
